@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1); 
+}
+
+.calculator {
+    background-color: rgba(0, 0, 0, 1); /* black */
+    padding: 20px;
+    max-width: 400px;
+    border: solid 1px rgba(204, 204, 204, 1); /* grey */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+#result {
+    background-color: rgba(255, 255, 255, 0.9); /* white with slight transparency */
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(221, 221, 221, 1); /* light grey */
+}
+
+/* Assigning 17 different colors to buttons */
+.clear {
+    background-color: rgba(255, 0, 0, 1); /* Red */
+    color: rgba(255, 255, 255, 1); /* White */
+}
+
+.cut {
+    background-color: rgba(0, 0, 255, 1); /* Blue */
+    color: rgba(255, 255, 255, 1); /* White */
+}
+
+.operator {
+    background-color: rgba(255, 165, 0, 1); /* Orange */
+    color: rgba(255, 255, 255, 1); /* White */
+}
+
+.number:nth-child(5) {
+    background-color: rgba(0, 255, 0, 1); /* Green */
+    color: rgba(0, 0, 0, 1); /* Black */
+}
+
+.number:nth-child(6) {
+    background-color: rgba(128, 0, 128, 1); /* Purple */
+    color: rgba(255, 255, 255, 1); /* White */
+}
+
+.number:nth-child(7) {
+    background-color: rgba(255, 192, 203, 1); /* Pink */
+    color: rgba(0, 0, 0, 1); /* Black */
+}
+
+.number:nth-child(9) {
+    background-color: rgba(165, 42, 42, 1); /* Brown */
+    color: rgba(255, 255, 255, 1); /* White */
+}
+
+.number:nth-child(10) {
+    background-color: rgba(173, 216, 230, 1); /* Light Blue */
+    color: rgba(0, 0, 0, 1); /* Black */
+}
+
+.number:nth-child(11) {
+    background-color: rgba(0, 255, 255, 1); /* Cyan */
+    color: rgba(0, 0, 0, 1); /* Black */
+}
+
+.number:nth-child(13) {
+    background-color: rgba(255, 0, 255, 1); /* Magenta */
+    color: rgba(255, 255, 255, 1); /* White */
+}
+
+.number:nth-child(14) {
+    background-color: rgba(0, 255, 127, 1); /* Lime */
+    color: rgba(0, 0, 0, 1); /* Black */
+}
+
+.number:nth-child(15) {
+    background-color: rgba(128, 128, 0, 1); /* Olive */
+    color: rgba(255, 255, 255, 1); /* White */
+}
+
+.number:nth-child(16) {
+    background-color: rgba(128, 0, 0, 1); /* Maroon */
+    color: rgba(255, 255, 255, 1); /* White */
+}
+
+.decimal {
+    background-color: rgba(238, 130, 238, 1); /* Violet */
+    color: rgba(0, 0, 0, 1); /* Black */
+}
+
+.equals {
+    background-color: rgba(0, 128, 128, 1); /* Teal */
+    grid-row: span 3;
+    color: rgba(255, 255, 255, 1); /* White */
+}
